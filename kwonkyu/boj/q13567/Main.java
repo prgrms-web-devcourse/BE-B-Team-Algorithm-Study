@@ -20,6 +20,7 @@ public class Main {
         int robotDirectionIndex = 0;
 
         while (count-- > 0) {
+            // when robot position exceeds the map area, halt now.
             if (robotX >= boxSize || robotY >= boxSize || robotX < 0 || robotY < 0) {
                 System.out.println("-1");
                 return;

@@ -45,13 +45,14 @@ public class Main {
             for (int index = 1; index < ants.size(); index++) {
                 AntDirection current = ants.get(index);
                 // if (!previous.equals(current)) {
-                if (previous.antDirection == false && current.antDirection == true) {
+                if (previous.antDirection == false && current.antDirection == true) { // LRLRLR...
                     AntDirection buffer = current;
+                    // replace adjacent ants
                     ants.remove(index);
                     ants.add(index, previous);
                     ants.remove(index - 1);
                     ants.add(index - 1, buffer);
-                    index++;
+                    index++; // look for next ant.
                     if (index < ants.size())
                         previous = ants.get(index);
                 } else {

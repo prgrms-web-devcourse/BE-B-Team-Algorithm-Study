@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    private static boolean vowelCheck(String s) {
+    private static boolean vowelCheck(String s) { // constraint #1: contains any vowel.
         return s.contains("a") || s.contains("e") || s.contains("i") || s.contains("o") || s.contains("u");
     }
 
@@ -13,7 +13,8 @@ public class Main {
         return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
     }
 
-    private static boolean duplicatedCheck(String s) {
+    private static boolean duplicatedCheck(String s) { // constraint #2: check duplicated(more than 2) any vowels or
+                                                       // non-vowels each.
         char[] chars = s.toCharArray();
         boolean isPreviousVowel = isVowel(chars[0]);
         int count = 1;
@@ -32,7 +33,7 @@ public class Main {
         return count < 3;
     }
 
-    private static boolean continuousCheck(String s) {
+    private static boolean continuousCheck(String s) { // constraint #3: check continuous character except 'e', 'o'
         char[] chars = s.toCharArray();
         char previous = chars[0];
         for (int index = 1; index < chars.length; index++) {
