@@ -3,7 +3,7 @@
   <img width="200px;" src="https://github.com/prgrms-web-devcourse/FE-August-study/raw/main/src/images/prgms-logo.png"/>
 </p>
 <h2 align="middle">B팀 알고리즘 Study</h2>
-<p align="middle">Today I Leared</p>
+<p align="middle">Today I Learned</p>
 <p align="middle">
   <img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="template version"/>
   <img src="https://img.shields.io/badge/language-md-md.svg?style=flat-square"/>
